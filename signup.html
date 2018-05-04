@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- ** Ahsan Nawaz is117-006 Spring 2018 ** -->
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="signup.css" crossorigin="anonymous">
+
+
+    <title>Sign Up</title>
+  </head>
+  <body>
+<!--Nav-->
+<div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom box-shadow">
+      <h5 class="my-0 mr-md-auto font-weight-normal">Ahsan's Shop</h5>
+      <nav class="my-2 my-md-0 mr-md-3">
+        <a class="p-2 text-dark" href="support.html">Support</a>
+        <a class="p-2 text-dark" href="index.html">Home</a>
+      </nav>
+      <a class="btn btn-outline-primary" href="signup.html">Sign up</a>
+</div>   
+
+<div class="card card-outline-secondary" id="title">
+     <div class="card-header">
+         <h2 class="mb-0">Fill Out The Form <br>And<br> Let's Get You Your First Delivery.</h2>
+     </div>
+</div>
+<!-- form user info -->
+ <div class="card card-outline-secondary" id="base">
+     <div class="card-header">
+         <h3 class="mb-0">User Information</h3>
+     </div>
+     <div class="card-body">
+         <form class="form" role="form" autocomplete="off">
+             <div class="form-group row">
+                 <label class="col-lg-3 col-form-label form-control-label">First name</label>
+                 <div class="col-lg-9">
+                     <input class="form-control" type="text" value="Ahsan">
+                 </div>
+             </div>
+             <div class="form-group row">
+                 <label class="col-lg-3 col-form-label form-control-label">Last name</label>
+                 <div class="col-lg-9">
+                     <input class="form-control" type="text" value="Nawaz">
+                 </div>
+             </div>
+             <div class="form-group row">
+                 <label class="col-lg-3 col-form-label form-control-label">Email</label>
+                 <div class="col-lg-9">
+                     <input class="form-control" type="email" value="email@gmail.com">
+                 </div>
+             </div>
+             <div class="form-group row">
+                 <label class="col-lg-3 col-form-label form-control-label">Complete Address</label>
+                 <div class="col-lg-9">
+                     <input class="form-control" type="text" value="street , city, state, zip">
+                 </div>
+             </div>
+             <div class="form-group row">
+                 <label class="col-lg-3 col-form-label form-control-label">Phone Number</label>
+                 <div class="col-lg-9">
+                     <input class="form-control" type="url" value="xxx-xxx-xxxx">
+                 </div>
+             </div>
+             <div class="form-group row">
+                 <label class="col-lg-3 col-form-label form-control-label">Package Deal</label>
+                 <div class="col-lg-9">
+                     <select id="user_package_deal" class="form-control" size="0">
+                         <option value="#">Select One</option>
+                         <option value="Bronze">Bronze</option>
+                         <option value="Silver">Silver</option>
+                         <option value="Gold">Gold</option>
+                     </select>
+                 </div>
+             </div>
+             <div class="form-group row">
+                 <label class="col-lg-3 col-form-label form-control-label">Username</label>
+                 <div class="col-lg-9">
+                     <input class="form-control" type="text" value="ahsanuser">
+                 </div>
+             </div>
+             <div class="form-group row">
+                 <label class="col-lg-3 col-form-label form-control-label">Password</label>
+                 <div class="col-lg-9">
+                     <input class="form-control" type="password" value="11111122333">
+                 </div>
+             </div>
+             <div class="form-group row">
+                 <label class="col-lg-3 col-form-label form-control-label">Confirm</label>
+                 <div class="col-lg-9">
+                     <input class="form-control" type="password" value="11111122333">
+                 </div>
+             </div>
+         </form>
+     </div>
+ </div>
+ <!-- /form user info -->
+ <br><br>
+ <!-- form card cc payment -->
+                    <div class="card card-outline-secondary" id="cc">
+                        <div class="card-body">
+                            <h3 >Credit Card Payment</h3>
+                            <hr>
+                            <div class="alert alert-info p-2 pb-3">
+                                <a class="close font-weight-normal initialism" data-dismiss="alert" href="#"><samp>&times;</samp></a> 
+                                CVC code is required.
+                            </div>
+                            <form class="form" role="form" autocomplete="off">
+                                <div class="form-group">
+                                    <label for="cc_name">Card Holder's Name</label>
+                                    <input type="text" class="form-control" id="cc_name" pattern="\w+ \w+.*" title="First and last name" required="required">
+                                </div>
+                                <div class="form-group">
+                                    <label>Card Number</label>
+                                    <input type="text" class="form-control" autocomplete="off" maxlength="20" pattern="\d{16}" title="Credit card number" required="">
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-md-12">Card Exp. Date</label>
+                                    <div class="col-md-4">
+                                        <select class="form-control" name="cc_exp_mo" size="0">
+                                            <option value="01">01</option>
+                                            <option value="02">02</option>
+                                            <option value="03">03</option>
+                                            <option value="04">04</option>
+                                            <option value="05">05</option>
+                                            <option value="06">06</option>
+                                            <option value="07">07</option>
+                                            <option value="08">08</option>
+                                            <option value="09">09</option>
+                                            <option value="10">10</option>
+                                            <option value="11">11</option>
+                                            <option value="12">12</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <select class="form-control" name="cc_exp_yr" size="0">
+                                            <option>2018</option>
+                                            <option>2019</option>
+                                            <option>2020</option>
+                                            <option>2021</option>
+                                            <option>2022</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <input type="text" class="form-control" autocomplete="off" maxlength="3" pattern="\d{3}" title="Three digits at back of your card" required="" placeholder="CVC">
+                                    </div>
+                                </div>
+                                
+                                <hr>
+                                <div class="form-group row">
+                                    <div class="col-md-6">
+                                        <button type="reset" class="btn btn-default btn-lg btn-block">Cancel</button>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <button type="submit" class="btn btn-success btn-lg btn-block">Submit</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- /form card cc payment -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+  </body>
+</html>
